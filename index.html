@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+
+    <link href="./bsasset/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--create navbar class
+then a with navbar-brand
+div with navbar-collapse
+ul list
+navbar-light
+bg-primary
+nav-item for li
+nav-link for a
+toggle
+for toggel towork navbar-expand-lg
+ml-auto to ul
+
+-->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-transparant">
+        <div class="container">
+          <a href="/" class="navbar-brand">
+            <img
+              src="pawimg/donate.png"
+              width="30"
+              height="30"
+              alt="Donates image"
+              loading="lazy"
+            />Donations</a
+          >
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#myNavBar"
+            aria-controls="myNavBar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="myNavBar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                <a href="/index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item active" class="nav-item">
+                <a href="/about.html" class="nav-link">About us</a>
+              </li>
+              <li class="nav-item active">
+                <a href="/contact.html" class="nav-link">contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h2 class="">stray Need your Help!</h2>
+      <h3 class="">He who feeds a hungry animal feeds his own soul</h3>
+
+      <a href="./donation.html">
+        <button type="button" class="btn btn-lg btn-outline-light donatebtn">
+          Donate
+        </button></a
+      >
+    </div>
+
+    <script src="./bsasset/js/jquery.min.js"></script>
+    <script src="./bsasset/js/bootstrap.min.js"></script>
+  </body>
+</html>
