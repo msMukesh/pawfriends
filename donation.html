@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./bsasset/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      body {
+        background: url("pawimg/donatebg.jpeg");
+        box-sizing: border-box;
+      }
+
+      * {
+        box-sizing: inherit;
+      }
+
+      main {
+        background: #c58bd4;
+        background: linear-gradient(90deg, #925a8a 0, #c686e8 58%);
+        font-family: "Inter", sans-serif;
+        width: 70%;
+        max-width: 700px;
+        margin: 60px auto;
+        font-family: Calibri, Arial, sans-serif;
+        padding: 60px;
+      }
+
+      form,
+      h1 {
+        padding-bottom: 1rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-md navbar-light"
+        style="background-color: #e4bdee"
+      >
+        <div class="container">
+          <a href="/" class="navbar-brand h5">
+            <img
+              src="pawimg/paw.png"
+              width="30"
+              height="30"
+              alt="Donates image"
+              loading="lazy"
+            />Paw Friends</a
+          >
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#myNavBar"
+            aria-controls="myNavBar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="myNavBar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                <a href="./index.html" class="nav-link h5"
+                  ><strong>Home</strong></a
+                >
+              </li>
+              <li class="nav-item active" class="nav-item">
+                <a href="./about.html" class="nav-link h5"
+                  ><strong>About us</strong></a
+                >
+              </li>
+              <li class="nav-item active">
+                <a href="./contact.html" class="nav-link h5"
+                  ><strong>contact</strong></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1><strong>Donate Now🐾</strong></h1>
+
+      <form>
+        <script
+          src="https://checkout.razorpay.com/v1/payment-button.js"
+          data-payment_button_id="pl_Knuv81Z8XMhRl0"
+          async
+        ></script>
+      </form>
+    </main>
+
+    <script src="./bsasset/js/jquery.min.js"></script>
+    <script src="./bsasset/js/bootstrap.min.js"></script>
+  </body>
+</html>

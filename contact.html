@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./bsasset/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      body {
+        background: url("pawimg/contactbgpic.png");
+        box-sizing: border-box;
+      }
+
+      * {
+        box-sizing: inherit;
+      }
+
+      main {
+        background: #e5d6d6;
+        background: linear-gradient(90deg, #f3d6d6 0, #d9dcf2 58%);
+        font-family: "Inter", sans-serif;
+        width: 90%;
+        max-width: 800px;
+        margin: 50px auto;
+        font-family: Calibri, Arial, sans-serif;
+        padding: 20px;
+      }
+
+      h1,
+      p {
+        text-align: center;
+      }
+      label {
+        display: block;
+        margin: 1em 0 0.2em;
+      }
+      /* single-line text, checkbox, and button */
+      input,
+      select,
+      textarea {
+        display: block;
+        width: 100%;
+        padding: 0.3em;
+        font-size: 20px;
+        background-color: #fbfbfb;
+        border: solid 1px #ccc;
+        resize: vertical;
+      }
+      textarea {
+        min-height: 180px;
+      }
+
+      input[type="submit"] {
+        background: lightcoral;
+        margin: 1em 0 0;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        transition: all 0.3s ease-out;
+      }
+
+      input:focus,
+      input:hover,
+      select:focus,
+      select:hover,
+      textarea:focus,
+      textarea:hover {
+        background: lavenderBlush;
+      }
+
+      /* hover and focus states */
+      input[type="submit"]:hover,
+      input[type="submit"]:focus {
+        background: lightgreen;
+        outline: none;
+      }
+
+      @media screen and (min-width: 600px) {
+        /*  make the form 2 columns */
+        form:after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+        .column {
+          width: 50%;
+          padding: 1em;
+          float: left;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-md navbar-light"
+        style="background-color: aliceblue"
+      >
+        <div class="container">
+          <a href="/" class="navbar-brand h5">
+            <img
+              src="pawimg/paw.png"
+              width="30"
+              height="30"
+              alt="Donates image"
+              loading="lazy"
+            />Paw Friends</a
+          >
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#myNavBar"
+            aria-controls="myNavBar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="myNavBar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                <a href="./index.html" class="nav-link h5"
+                  ><strong>Home</strong></a
+                >
+              </li>
+              <li class="nav-item active" class="nav-item">
+                <a href="./about.html" class="nav-link h5"
+                  ><strong>About us</strong></a
+                >
+              </li>
+              <li class="nav-item active">
+                <a href="./contact.html" class="nav-link h5"
+                  ><strong>contact</strong></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <form action="https://formsubmit.co/msmukesh2001@gmail.com" method="POST">
+        <h1>Contact Us</h1>
+        <p>Please take a moment to get in touch</p>
+
+        <div class="column">
+          <label for="the-name">Your Name</label>
+          <input type="text" name="name" id="the-name" />
+
+          <label for="the-email">Email Address</label>
+          <input type="email" name="email" id="the-email" />
+
+          <label for="the-phone">Phone Number</label>
+          <input type="tel" name="phone" id="the-phone" />
+        </div>
+
+        <div class="column">
+          <label for="the-message">Message</label>
+          <textarea name="message" id="the-message"></textarea>
+          <label>
+            <input type="checkbox" name="newsletter" value="yes" /> Join our
+            mailing list?
+          </label>
+          <input type="submit" value="Send Message" />
+        </div>
+      </form>
+    </main>
+
+    <script src="./bsasset/js/jquery.min.js"></script>
+    <script src="./bsasset/js/bootstrap.min.js"></script>
+  </body>
+</html>
